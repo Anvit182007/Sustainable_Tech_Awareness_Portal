@@ -1,0 +1,103 @@
+/* General Body and Font Styling */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e1f7e3; /* Aesthetic light background */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #004d40; /* Dark teal header background */
+    color: #fff;
+}
+
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    white-space: nowrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.7s ease;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #ffcc00; /* Yellow background on hover */
+    color: #004d40; /* Dark color for text */
+}
+
+footer {
+    background-color: #004d40; /* Adjust as needed */
+    color: #ecf0f1; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+
+/* Main Content */
+.calculator-intro {
+    padding: 20px;
+    margin: 20px 10%;
+    background-color: #c4f8c8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.calculator-steps, .calculator-results {
+    padding: 20px;
+    margin: 20px 10%;
+    background-color: #e1f7e3;
+    border-radius: 8px;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+#calculateBtn {
+    background-color: #004d40;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#calculateBtn:hover {
+    background-color: #ffcc00;
+    color: #004d40;
+}

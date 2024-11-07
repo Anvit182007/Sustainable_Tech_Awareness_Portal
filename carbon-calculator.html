@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator - India</title>
+    <link rel="stylesheet" href="stylecarbon.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Sustainable Tech Awareness Portal - Carbon Calculator</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="green-alternatives.html">Green Alternatives</a></li>
+                <li><a href="facts-stats.html">Facts & Stats</a></li>
+                <li><a href="digital-footprint-tips.html">Digital Footprint Tips</a></li>
+                <li><a href="carbon-calculator.html">Carbon Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+p=
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="calculator-intro">
+            <h2>Carbon Footprint Calculator</h2>
+            <p>Calculate your carbon footprint based on common energy sources and transportation in India.</p>
+        </section>
+
+        <!-- Input Section -->
+        <section class="calculator-steps">
+            <div class="step">
+                <h3>Home Energy Usage</h3>
+                <label for="electricity">Monthly Electricity Usage (kWh):</label>
+                <input type="number" id="electricity" required><br><br>
+
+                <label for="lpg">Monthly LPG Cylinder Usage (kg):</label>
+                <input type="number" id="lpg" required><br>
+            </div>
+
+            <div class="step">
+                <h3>Transportation</h3>
+                <label for="publicTransport">Monthly Public Transport Usage (km):</label>
+                <input type="number" id="publicTransport" required><br><br>
+
+                <label for="carMileage">Yearly Car Mileage (km):</label>
+                <input type="number" id="carMileage" required><br><br>
+
+                <label for="domesticFlights">Domestic Flights Taken in the Past Year:</label>
+                <input type="number" id="domesticFlights" required><br><br>
+
+                <label for="internationalFlights">International Flights Taken in the Past Year:</label>
+                <input type="number" id="internationalFlights" required><br>
+            </div>
+
+            <!-- Recycling Options -->
+            <div class="step">
+                <h3>Recycling</h3>
+                <label>
+                    <input type="checkbox" id="recycleNewspaper"> I recycle newspapers
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="recycleAluminum"> I recycle aluminum and tin cans
+                </label>
+            </div>
+
+            <button id="calculateBtn">Calculate My Carbon Footprint</button>
+        </section>
+
+        <!-- Results Section -->
+        <section class="calculator-results" id="results" style="display: none;">
+            <h3>Your Estimated Carbon Footprint:</h3>
+            <p id="footprintResult"></p>
+            <p id="footprintRating"></p>
+            <p>Consider adopting sustainable practices to lower your carbon footprint.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sustainable Tech Awareness Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
